@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo das Cores</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Jogo das Cores</h1>
+        <div class="game-controls">
+            <input type="text" id="playerName" placeholder="Seu nome">
+            <button id="startBtn">Jogar</button>
+        </div>
+        <div class="game-info">
+            <p>Pontuação: <span id="score">0</span></p>
+            <p>Tempo restante: <span id="time">30</span>s</p>
+            <p>Cor alvo: <span id="targetColor" class="color-sample"></span></p>
+        </div>
+        <div id="colorGrid" class="color-grid"></div>
+        <div id="gameOver" class="hidden">
+            <h2>Fim de Jogo!</h2>
+            <p id="finalScore"></p>
+            <button id="playAgainBtn">Jogar Novamente</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
